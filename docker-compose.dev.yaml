@@ -1,0 +1,15 @@
+services:
+  api:
+    container_name: fast-ner-api-dev
+    build:
+      context: .
+      dockerfile: ./fast-ner-api.dev.dockerfile
+    command: /start-reload.sh
+    environment:
+      IS_CONTAINER: "true"
+      MODULE_NAME: "fast-ner.main"
+      VARIABLE_NAME: "app"
+    volumes:
+      - ./app:/app
+    ports:
+      - "127.0.0.1:8000:80"
