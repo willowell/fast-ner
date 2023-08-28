@@ -1,0 +1,103 @@
+# Do not include Git metadata
+.git
+.gitattributes
+.gitignore
+
+# Docker
+docker-compose.yml
+docker-compose.yaml
+docker-compose.*.yml
+docker-compose.*.yaml
+Dockerfile
+*.dockerfile
+*.Dockerfile
+.docker
+.dockerignore
+
+# Do not include local env files
+*.local
+.env.local
+.env.*.local
+
+# Do not include local documentation
+docs
+
+# Do not include local virtual environments
+.env
+.venv/
+venv/
+
+# Do not include local build output
+.cache
+.output
+dist
+
+# Do not include pycache
+**/__pycache__/
+**/*.py[cod]
+
+# C extensions
+*.so
+
+# Do not include dists
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Do not track log files because they can pollute the repo
+logs
+*.log
+*.log*
+
+# Do not include test data
+.tox/
+.coverage
+.coverage.*
+nosetests.xml
+coverage.xml
+*.cover
+.mypy_cache
+.pytest_cache
+.hypothesis
+
+# Translations
+*.mo
+*.pot
+
+# PyBuilder
+target/
+
+# PyInstaller
+#  Usually these files are written by a python script from a template
+#  before PyInstaller builds the exe, so as to inject date/other infos into it.
+*.manifest
+*.spec
+
+# Do not include installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Do not include editor directories and files
+.vscode
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Do not include misc files
+.DS_Store
+**/.DS_Store
